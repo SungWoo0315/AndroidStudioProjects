@@ -2,3 +2,4 @@ rootProject.name = "My Application3_0608"
 include ':app'
 include ':guesswhat1'
 include ':guesswhat2'
+include ':intentcall'

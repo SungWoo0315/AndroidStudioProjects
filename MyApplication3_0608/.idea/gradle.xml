@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/guesswhat1" />
             <option value="$PROJECT_DIR$/guesswhat2" />
+            <option value="$PROJECT_DIR$/intentcall" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
