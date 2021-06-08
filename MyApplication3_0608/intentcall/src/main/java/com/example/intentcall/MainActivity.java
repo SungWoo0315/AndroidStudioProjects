@@ -3,18 +3,40 @@ package com.example.intentcall;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.paddingmargin);
 
 
+    }
+
+    public void onRed(View v) {
+        LinearLayout layout = findViewById(R.id.my_linearlayout);
+        layout.setBackgroundColor(Color.RED);
+    }
+
+    public void onBlue(View v) {
+        LinearLayout layout = findViewById(R.id.my_linearlayout);
+        layout.setBackgroundColor(Color.BLUE);
+    }
+
+    public void onGreen(View v) {
+        LinearLayout layout = findViewById(R.id.my_linearlayout);
+        layout.setBackgroundColor(Color.GREEN);
+    }
+
+    public void onOther(View v) {
+        LinearLayout layout = findViewById(R.id.my_linearlayout);
+        layout.setBackgroundColor(Color.MAGENTA);
     }
 
 
