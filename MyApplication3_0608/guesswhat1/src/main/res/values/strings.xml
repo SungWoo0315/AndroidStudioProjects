@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">guesswhat1</string>
+    <string name="title">10~30 사이 숫자를 입력하세요.</string>
+    <string name="button_ok">확인</string>
+    <string name="result">판정</string>
+    <string name="result_txt">게임결과가 표시됩니다.</string>
+    <string name="reset">리셋</string>
+</resources>
