@@ -7,7 +7,11 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,8 +20,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test);
 
+        Button reset = findViewById(R.id.reset);
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LinearLayout layout = findViewById(R.id.my_linearlayout);
+                layout.setBackgroundColor(Color.TRANSPARENT);
+            }
+        });
 
     }
+
 
     public void onRed(View v) {
         LinearLayout layout = findViewById(R.id.my_linearlayout);
@@ -34,10 +47,31 @@ public class MainActivity extends AppCompatActivity {
         layout.setBackgroundColor(Color.GREEN);
     }
 
-    public void onOther(View v) {
+    public void onRandom(View v) {
         LinearLayout layout = findViewById(R.id.my_linearlayout);
-        layout.setBackgroundColor(Color.MAGENTA);
+
+        //랜덤컬러 구현.
+        Random random = new Random();
+        int color = 0;
+        color = Color.rgb(random.nextInt(255),
+                random.nextInt(255),
+                random.nextInt(255));
+
+        layout.setBackgroundColor(color);
+
+        //RGB 추출 후. Toast 출력.
+        int rgb = color;
+        int r = Color.red(rgb);   //빨강
+        int g = Color.green(rgb); //초록
+        int b = Color.blue(rgb);  //파랑
+
+        Toast.makeText(MainActivity.this, "RGB 값 : "+" R:"+r+" G:"+g+" B:"+b, Toast.LENGTH_LONG).show();
+
+//        Toast.makeText(MainActivity.this, "출력 컬러 : " + color, Toast.LENGTH_LONG).show();
+
     }
+
+
 
 
     public  void onHomepage(View v) {
