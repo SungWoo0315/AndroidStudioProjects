@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         int g = Color.green(rgb); //초록
         int b = Color.blue(rgb);  //파랑
 
-        Toast.makeText(MainActivity.this, "RGB 값 : "+" R:"+r+" G:"+g+" B:"+b, Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "RGB 값 : "+" R:"+r+" G:"+g+" B:"+b, Toast.LENGTH_SHORT).show();
 
 //        Toast.makeText(MainActivity.this, "출력 컬러 : " + color, Toast.LENGTH_LONG).show();
 

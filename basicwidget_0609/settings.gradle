@@ -1,0 +1,4 @@
+rootProject.name = "basicwidget_0609"
+include ':basicwidget'
+include ':layoutex'
+include ':widgets_more'
